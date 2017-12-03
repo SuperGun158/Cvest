@@ -1,0 +1,28 @@
+body{
+    background-image: url(fullsize.jpg);
+    background-size: 100%
+}
+.room1{
+    display: none
+}
+.room2{
+    display: none
+}
+.car{
+    display: none
+}
+.bum{
+    display: none
+}
+.bum2{
+    display: none
+}
+.room4{
+    display: none
+}
+.pec{
+    display: none
+}
+.text{
+    display: none
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="style1.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <div class="room">
+   <h2>
+       НАЙДИ ДОШИК СКОРЕЕ АААААА
+   </h2>
+    <img src="door1.png" class="door1"/>
+    <img src="door2.gif" class="door2">
+    </div>
+    <div class="room1">
+    <h2>
+       ВОЗЬМИ ПАСТУ ИЛИ ДОШИК
+   </h2>
+    <img src="doshir.png" class="food1"/>
+    <img src="pasta.png" class="food2">
+    </div>
+    <div class="room2">
+    <h2>
+       ВОЗЬМИ ФОНАРЬ ИЛИ 1MILIARD DOLOROV
+   </h2>
+    <img src="fonar.png" class="money1"/>
+    <img src="money.png" class="money2">
+    </div>
+    <img src="ASOVOLYXA.jpg" class="car"/>
+    <img src="avatar-the-last-airbender-desert-explosion-funny-Favim.com-2401953.gif" class="bum"/>
+    <img src="BUM.gif" class="bum2"/>
+<div class="room4">
+    <h2>
+        Выбери 1 из этого
+    </h2>
+    <a href="https://www.youtube.com/watch?v=q1BXoVa4enE">
+    <img src="doshir.png" class="food4"/>
+    </a>
+    <img src="doshir.png" class="food3"/>
+</div>
+    <img src="PEC.jpg" class="pec"/>
+    <h2 class="text">
+        ПЛОХАЯ КОНЦОВКА
+    </h2>
+    <script>
+        var door1 = document.querySelector('.door1');
+        var door2 = document.querySelector('.door2');
+        var room1 = document.querySelector('.room');
+        var room2 = document.querySelector('.room1');
+        var room3 = document.querySelector('.room2');
+        var food = document.querySelector('.food1');
+        var food2 = document.querySelector('.food2');
+        var f = document.querySelector('.money1');
+        var money = document.querySelector('.money2');
+        var body = document.querySelector('.bod');
+        var c = document.querySelector('.car');
+        var b = document.querySelector('.bum');
+        var b2 = document.querySelector('.bum2');
+        var f2 = document.querySelector('.food3');
+        var f1 = document.querySelector('.food4');
+        var pec = document.querySelector('.pec');
+        var room4 = document.querySelector('.room4');
+        door1.onclick = function(){
+            room1.style.display = 'none';
+            alert('ЗА ЭТОЙ ДВЕРЬЮ ЕСТЬ ДОШИК. ДВЕРИ ЗАХЛОПНУЛИСЬ И ТЫ  МОЖЕШЬ ВЗЯТЬ 1 ИЗ ВЕЩЕЙ');
+            room2.style.display = 'block'
+        }
+        door2.onclick = function(){
+            room1.style.display = 'none'; 
+            alert('ЗА ЭТОЙ ДВЕРЬЮ НЕТУ ДОШИКА. ДВЕРИ ЗАХЛОПНУЛИСЬ И ТЫ НЕ МОЖЕШЬ НАЙТИ ДОШИК');
+            room3.style.display = 'block'
+        }
+        food.onclick = function(){
+            room2.style.display = 'none'; 
+            alert('ТЫ ВЗЯЛ ДОШИК И ПОЕХАЛ ДОМОЙ А ТАМ ТЫ СЧИТАЛОЧКОЙ РЕШИЛ ЧТО ДЕЛАТЬ С ДОШИКОМ.');
+            room4.style.display = 'block'
+        }
+        money.onclick = function(){
+            alert('ТЫ РАЗБОГАТЕЛ И КУПИЛ СЕБЕ РАЗВОЛЮХУ ВОТ ОНА.');
+            c.style.display = 'block';
+            room3.style.display = 'none';
+        }
+        f.onclick = function(){
+            alert('КОГДА ТЫ ВКЛЮЧИЛ ФОНАРИК ПРОИЗАШЁЛ БАБАХ ВОТ КАК ЭТО БЫЛО.');
+            b.style.display = 'block';
+            room3.style.display = 'none';
+            text.style.display = 'block';
+        }
+        food2.onclick = function(){
+            alert('ТЫ ПРОГОЛОДАЛСЯ И СЬЕЛ ПАСТУ А У ТЕБЯ ПОИВИЛАСЬ ИЗЖОГА ПОТОМ ЗАБОЛЕЛА ГОЛОВА ВОТ ТАК ЭТО БЫЛО.');
+            b2.style.display = 'block';
+            room2.style.display = 'none';
+            text.style.display = 'block';
+        }
+        f2.onclick = function(){
+            alert('ТЫ СЬЕЛ ДОШИК И К ТЕБЕ ВОРВАЛСЯ БОРЬБА С ДОШИКОМ.');
+            pec.style.display = 'block';
+            room4.style.display = 'none';
+            text.style.display = 'block';
+        }
+        f1.onclick = function(){
+            alert('ТЫ РЕШИЛ СДЕЛАТЬ КЛИП ЧТОБЫ ВСЕ ЗНАЛИ ЧТО У ТЕБЯ ЕСТЬ ДОШИК. И ЭТО БЫЛА ХОРОШАЯ КОНЦОВКА. ДОСМОТРИ КОНЦОВКУ ДО КОНЦА (ВКЛЮЧИ ЗВУК ПО СИЛЬНЕЕ).');
+        }
+    </script>
+</body>
+</html>
